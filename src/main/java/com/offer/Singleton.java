@@ -1,5 +1,8 @@
 package com.offer;
 
+/**
+ * 实现单例模式的方式
+ */
 public class Singleton {
 
     /**
