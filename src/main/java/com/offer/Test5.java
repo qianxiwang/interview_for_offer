@@ -3,7 +3,7 @@ package com.offer;
 import java.util.Stack;
 
 /**
- * 面试题5：从尾到头打印链表
+ * 题目：从尾到头打印链表
  * 题目：输入一个链表的头结点，从尾到头反过来打印出每个结点的值（不能改变链表的结构，仅仅对链表进行只读操作）
  * <p>
  * 思路：
@@ -21,7 +21,9 @@ public class Test5 {
      * @param headNode 头结点
      */
     public static void printListReverselyUsingIteration(Node headNode) {
-        if (headNode == null) return;
+        if (headNode == null) {
+            return;
+        }
 
         Stack<Node> stack = new Stack<>();
 
@@ -40,7 +42,7 @@ public class Test5 {
     /**
      * 方法二：递归，递归的本质就是栈结构，代码更加简洁
      * 思路：
-     * 每访问到一个结点的时候，先递归输出它后面的结点，在输出该结点自身。
+     * 每访问到一个结点的时候，先递归输出它后面的结点，再输出该结点自身。
      *
      * @param headNode 头结点
      */

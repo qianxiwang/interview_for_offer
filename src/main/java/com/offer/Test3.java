@@ -3,6 +3,8 @@ package com.offer;
 /**
  * 二维数组中的查找
  * <p>
+ * <p>
+ * 题目：
  * 在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。
  * 请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
  * <p>
@@ -91,15 +93,15 @@ public class Test3 {
         return found;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int[][] matrix = {
-                {1 ,2, 8, 9},
+                {1, 2, 8, 9},
                 {2, 4, 9, 12},
                 {4, 7, 10, 13},
                 {6, 8, 11, 15}
         };
         int[] numbers = {-1, 1, 15, 7};
-        for (int number : numbers){
+        for (int number : numbers) {
             System.out.println(String.format("contains  %d, %b", number, Test3.contains(matrix, number)));
             System.out.println(String.format("contains2 %d, %b", number, Test3.contains2(matrix, number)));
             System.out.println(String.format("contains3 %d, %b", number, Test3.contains3(matrix, number)));
